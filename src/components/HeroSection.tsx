@@ -9,12 +9,9 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-lavender/10 blur-3xl animate-float" style={{ animationDelay: '4s' }} />
 
       <div className="max-w-4xl mx-auto text-center animate-fade-up">
-        {/* Japanese Quote */}
-        <p className="font-jp text-lg md:text-xl text-muted-foreground mb-6 tracking-wide">
-          七転び八起き
-        </p>
-        <p className="text-sm text-muted-foreground mb-12 italic">
-          "Nana korobi ya oki" — Fall seven times, stand up eight
+        {/* Japanese Greeting */}
+        <p className="font-jp text-lg md:text-xl text-muted-foreground mb-12 tracking-wide">
+          はじめまして、ヴェダントです。
         </p>
 
         {/* Name */}
