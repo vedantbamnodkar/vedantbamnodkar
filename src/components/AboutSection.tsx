@@ -11,12 +11,27 @@ const AboutSection = () => {
         </div>
 
         {/* Bio */}
-        <div className="max-w-3xl mx-auto mb-20">
+        <div className="max-w-3xl mx-auto mb-12">
           <p className="text-lg text-muted-foreground leading-relaxed text-center font-body">
             A 2025 graduate in Electronics & Computer Engineering with a passion for building intelligent systems. 
             I believe that manual coding will become automated and extinct — that's why I've embraced{" "}
             <span className="text-primary font-medium">vibe coding</span> and{" "}
             <span className="text-secondary font-medium">prompt engineering</span> as essential skills for the future.
+          </p>
+        </div>
+
+        {/* Japanese Journey */}
+        <div className="max-w-3xl mx-auto mb-20 bg-background rounded-2xl p-6 shadow-soft border border-primary/10">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="font-jp text-2xl text-primary">日本語</span>
+            <h3 className="font-display text-xl">My Japanese Journey</h3>
+          </div>
+          <p className="text-muted-foreground leading-relaxed font-body">
+            I'm deeply passionate about Japanese language and culture. Having completed my{" "}
+            <span className="text-primary font-medium">JLPT N4 certification</span>, I'm now on my journey to achieve N3. 
+            From anime and manga to the rich history and traditions, Japan has always fascinated me. 
+            Learning the language has opened doors to understanding the culture at a deeper level — 
+            <span className="font-jp text-primary"> 一歩一歩</span> (step by step).
           </p>
         </div>
 
