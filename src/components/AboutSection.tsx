@@ -2,7 +2,7 @@ import { Brain, Code, Dumbbell, Book, Music, Plane, Swords, Film } from "lucide-
 
 const AboutSection = () => {
   return (
-    <section className="py-24 px-6 bg-card">
+    <section id="about" className="py-24 px-6 bg-card scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
@@ -36,7 +36,7 @@ const AboutSection = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <div id="skills" className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 scroll-mt-20">
           <SkillCard
             icon={<Brain className="w-6 h-6" />}
             title="AI & Machine Learning"
