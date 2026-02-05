@@ -44,26 +44,27 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Skills Grid */}
-        <div id="skills" className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 scroll-mt-20">
-          <SkillCard
-            icon={<Brain className="w-6 h-6" />}
-            title="AI & Machine Learning"
-            skills={["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Transformers"]}
-            color="coral"
-          />
-          <SkillCard
-            icon={<Code className="w-6 h-6" />}
-            title="LLM & NLP"
-            skills={["LangChain", "OpenAI API", "Hugging Face", "RAG", "Vector DBs"]}
-            color="teal"
-          />
-          <SkillCard
-            icon={<Brain className="w-6 h-6" />}
-            title="Prompt Engineering"
-            skills={["Vibe Coding", "Chain-of-Thought", "Few-Shot Learning", "System Design"]}
-            color="lavender"
-          />
+        {/* Skills Section */}
+        <div id="skills" className="scroll-mt-20 mb-20">
+          <div className="text-center mb-12">
+            <h3 className="font-display text-3xl mb-4">Skills</h3>
+            <div className="w-16 h-1 bg-gradient-to-r from-teal to-coral mx-auto rounded-full" />
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <SkillCard
+              icon={<Brain className="w-6 h-6" />}
+              title="AI & Machine Learning"
+              skills={["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Transformers", "LangChain", "Hugging Face"]}
+              color="coral"
+            />
+            <SkillCard
+              icon={<Code className="w-6 h-6" />}
+              title="LLM & Prompt Engineering"
+              skills={["OpenAI API", "RAG", "Vector DBs", "Vibe Coding", "Chain-of-Thought", "Few-Shot Learning"]}
+              color="teal"
+            />
+          </div>
         </div>
 
         {/* Interests */}
