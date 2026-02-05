@@ -6,9 +6,10 @@ const ContactSection = () => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <h2 className="font-display text-4xl md:text-5xl mb-4">Let's Connect</h2>
-        <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
+        <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
           Open to collaborations, opportunities, and conversations about AI, history, or anything interesting.
         </p>
+        <p className="font-jp text-primary mb-12">よろしくお願いします</p>
 
         {/* Contact Cards */}
         <div className="grid sm:grid-cols-2 gap-4 mb-16">
