@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Twitter, ArrowUpRight } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="contact" className="py-24 px-6 bg-background scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
         <h2 className="font-display text-4xl md:text-5xl mb-4">Let's Connect</h2>
