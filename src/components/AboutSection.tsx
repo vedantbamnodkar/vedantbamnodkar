@@ -1,4 +1,4 @@
-import { Brain, Code, Dumbbell, Book, Music, Plane, Swords, Film } from "lucide-react";
+import { Brain, Code, Dumbbell, Book, Plane, Film } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -69,27 +69,20 @@ const AboutSection = () => {
 
         {/* Interests */}
         <div className="text-center mb-12">
-          <h3 className="font-display text-3xl mb-8">Beyond Code</h3>
+          <h3 className="font-display text-3xl mb-4">Beyond Code</h3>
+          <div className="w-16 h-1 bg-gradient-to-r from-lavender to-gold mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           <InterestCard icon={<Book className="w-5 h-5" />} title="History Nerd" description="Books, films & documentaries" color="gold" />
-          <InterestCard icon={<Dumbbell className="w-5 h-5" />} title="Fitness" description="Daily exercise routine" color="mint" />
-          <InterestCard icon={<Swords className="w-5 h-5" />} title="Lathi-Kathi" description="Traditional martial art" color="coral" />
+          <InterestCard icon={<Dumbbell className="w-5 h-5" />} title="Fitness" description="Exercise & Lathi-Kathi" color="coral" />
           <InterestCard icon={<Film className="w-5 h-5" />} title="Cinema" description="Historical films & docs" color="teal" />
-          <InterestCard icon={<Music className="w-5 h-5" />} title="Singing" description="Musical expression" color="lavender" />
-          <InterestCard icon={<Plane className="w-5 h-5" />} title="Travel" description="Exploring new places" color="peach" />
+          <InterestCard icon={<Plane className="w-5 h-5" />} title="Travel" description="Exploring new places" color="lavender" />
           <InterestCard 
             icon={<span className="font-jp text-lg">日</span>} 
             title="Japanese" 
             description="N4 certified, pursuing N3" 
             color="primary" 
-          />
-          <InterestCard 
-            icon={<span className="text-lg">📚</span>} 
-            title="Reading" 
-            description="History & culture books" 
-            color="gold" 
           />
         </div>
       </div>
