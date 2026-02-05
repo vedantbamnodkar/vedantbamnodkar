@@ -11,12 +11,21 @@ const AboutSection = () => {
         </div>
 
         {/* Bio */}
-        <div className="max-w-3xl mx-auto mb-12">
+        <div className="max-w-3xl mx-auto mb-16 space-y-6">
           <p className="text-lg text-muted-foreground leading-relaxed text-center font-body">
-            A 2025 graduate in Electronics & Computer Engineering with a passion for building intelligent systems. 
-            I believe that manual coding will become automated and extinct — that's why I've embraced{" "}
-            <span className="text-primary font-medium">vibe coding</span> and{" "}
-            <span className="text-secondary font-medium">prompt engineering</span> as essential skills for the future.
+            I'm a <span className="text-primary font-medium">2025 Electronics & Computer Engineering graduate</span> with 
+            an insatiable curiosity that spans across technology, culture, and history. My journey in tech focuses on 
+            building intelligent systems using AI and machine learning.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed text-center font-body">
+            Beyond the code, I'm a <span className="text-coral font-medium">history enthusiast</span> who devours books 
+            and documentaries about ancient civilizations, a practitioner of <span className="text-teal font-medium">Lathi-Kathi</span> (a 
+            traditional Indian martial art), and a fitness devotee who believes in training both mind and body.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed text-center font-body">
+            I also embrace the future of development — believing that as coding becomes increasingly automated, 
+            skills like <span className="text-lavender font-medium">vibe coding</span> and <span className="text-secondary font-medium">prompt engineering</span> will 
+            define the next generation of builders.
           </p>
         </div>
 
