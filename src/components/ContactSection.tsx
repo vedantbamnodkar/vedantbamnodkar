@@ -1,18 +1,21 @@
 import { Github, Linkedin, Mail, Twitter, ArrowUpRight } from "lucide-react";
+import { AnimatedSection, StaggerContainer } from "@/hooks/useScrollAnimation";
 
 const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-6 bg-background scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
         {/* Section Header */}
-        <h2 className="font-display text-4xl md:text-5xl mb-4">Let's Connect</h2>
-        <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
-          Open to collaborations, opportunities, and conversations about AI, history, or anything interesting.
-        </p>
-        <p className="font-jp text-primary mb-12">よろしくお願いします</p>
+        <AnimatedSection>
+          <h2 className="font-display text-4xl md:text-5xl mb-4">Let's Connect</h2>
+          <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
+            Open to collaborations, opportunities, and conversations about AI, history, or anything interesting.
+          </p>
+          <p className="font-jp text-primary mb-12">よろしくお願いします</p>
+        </AnimatedSection>
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 gap-4 mb-16">
+        <StaggerContainer className="grid sm:grid-cols-2 gap-4 mb-16" staggerDelay={100}>
           <ContactCard
             href="mailto:vnbam2502@gmail.com"
             icon={<Mail className="w-5 h-5" />}
@@ -41,13 +44,15 @@ const ContactSection = () => {
             value="@xnodkar"
             color="foreground"
           />
-        </div>
+        </StaggerContainer>
 
         {/* Footer Quote */}
-        <div className="border-t border-border pt-12">
-          <p className="font-jp text-2xl text-muted-foreground mb-2">七転び八起き</p>
-          <p className="text-sm text-muted-foreground italic">Fall seven times, stand up eight.</p>
-        </div>
+        <AnimatedSection delay={200} animation="blur">
+          <div className="border-t border-border pt-12">
+            <p className="font-jp text-2xl text-muted-foreground mb-2">七転び八起き</p>
+            <p className="text-sm text-muted-foreground italic">Fall seven times, stand up eight.</p>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
