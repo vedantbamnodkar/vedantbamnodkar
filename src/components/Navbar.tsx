@@ -34,6 +34,7 @@ const Navbar = () => {
         <div className="flex gap-6 text-sm font-medium">
           <NavLink href="#about" onClick={(e) => handleNavClick(e, "about")}>About</NavLink>
           <NavLink href="#skills" onClick={(e) => handleNavClick(e, "skills")}>Skills</NavLink>
+          <NavLink href="#projects" onClick={(e) => handleNavClick(e, "projects")}>Projects</NavLink>
           <NavLink href="#contact" onClick={(e) => handleNavClick(e, "contact")}>Contact</NavLink>
         </div>
       </div>
