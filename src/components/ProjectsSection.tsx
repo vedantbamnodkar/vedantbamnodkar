@@ -59,8 +59,8 @@ const projects: Project[] = [
   {
     title: "Kaayda Kay Sangto",
     description:
-      "A legal awareness web application designed to make Indian law accessible and understandable for everyday citizens.",
-    technologies: ["React", "TypeScript", "Vite"],
+      "An AI-powered legal awareness platform making Indian law accessible to everyday citizens. Features a RAG-based chatbot that searches through 24+ major Indian laws (BNS, BNSS, BSA, Constitution, RTI, POSH, IT Act, Motor Vehicles Act and more) to provide accurate, sourced answers in simple language. Users can ask legal questions and receive instant, well-cited explanations breaking down complex legal jargon into understandable guidance.",
+    technologies: ["React", "TypeScript", "Vite", "RAG", "LangChain", "AI Chatbot"],
     links: [
       {
         label: "Live Demo",

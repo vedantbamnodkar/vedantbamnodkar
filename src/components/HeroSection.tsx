@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const HeroSection = () => {
@@ -52,7 +52,8 @@ const HeroSection = () => {
           <SocialLink href="https://github.com/gitnodkar" icon={<Github className="w-5 h-5" />} label="GitHub" delay={0} />
           <SocialLink href="https://in.linkedin.com/in/vedantbamnodkar" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" delay={50} />
           <SocialLink href="https://x.com/xnodkar" icon={<Twitter className="w-5 h-5" />} label="X" delay={100} />
-          <SocialLink href="mailto:vnbam2502@gmail.com" icon={<Mail className="w-5 h-5" />} label="Email" delay={150} />
+          <SocialLink href="https://instagram.com/bamnodkar_" icon={<Instagram className="w-5 h-5" />} label="Instagram" delay={150} />
+          <SocialLink href="mailto:vnbam2502@gmail.com" icon={<Mail className="w-5 h-5" />} label="Email" delay={200} />
         </div>
       </div>
 

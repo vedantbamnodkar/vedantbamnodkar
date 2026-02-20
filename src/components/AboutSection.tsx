@@ -87,12 +87,12 @@ const AboutSection = () => {
         </AnimatedSection>
 
         <StaggerContainer className="grid grid-cols-2 md:grid-cols-5 gap-4" staggerDelay={100}>
-          <InterestCard icon={<Book className="w-5 h-5" />} title="History Nerd" description="Books, films & documentaries" color="gold" />
-          <InterestCard icon={<Dumbbell className="w-5 h-5" />} title="Fitness" description="Exercise & Lathi-Kathi" color="coral" />
-          <InterestCard icon={<Film className="w-5 h-5" />} title="Cinema" description="Historical films & docs" color="teal" />
-          <InterestCard icon={<Plane className="w-5 h-5" />} title="Travel" description="Exploring new places" color="lavender" />
+          <InterestCard icon={<Book className="w-6 h-6" />} title="History Nerd" description="Books, films & documentaries" color="gold" />
+          <InterestCard icon={<Dumbbell className="w-6 h-6" />} title="Fitness" description="Exercise & Lathi-Kathi" color="coral" />
+          <InterestCard icon={<Film className="w-6 h-6" />} title="Cinema" description="Historical films & docs" color="teal" />
+          <InterestCard icon={<Plane className="w-6 h-6" />} title="Travel" description="Exploring new places" color="lavender" />
           <InterestCard 
-            icon={<span className="font-jp text-lg">日</span>} 
+            icon={<span className="font-jp text-xl">日</span>} 
             title="Japanese" 
             description="N4 certified, pursuing N3" 
             color="primary" 
@@ -164,12 +164,12 @@ const InterestCard = ({
   };
 
   return (
-    <div className={`rounded-xl p-4 border ${colorClasses[color]} transition-all duration-300 hover:scale-105`}>
-      <div className="flex items-center gap-3 mb-2">
+    <div className={`rounded-xl p-5 border ${colorClasses[color]} transition-all duration-300 hover:scale-105 aspect-square flex flex-col items-center justify-center text-center`}>
+      <div className="mb-2">
         {icon}
-        <span className="font-medium text-foreground">{title}</span>
       </div>
-      <p className="text-xs text-muted-foreground">{description}</p>
+      <span className="font-medium text-foreground text-sm">{title}</span>
+      <p className="text-xs text-muted-foreground mt-1">{description}</p>
     </div>
   );
 };
