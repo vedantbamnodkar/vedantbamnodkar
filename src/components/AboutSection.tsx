@@ -154,13 +154,13 @@ const InterestCard = ({
   color: string;
 }) => {
   const colorClasses: Record<string, string> = {
-    coral: "bg-coral/10 text-coral border-coral/20",
-    teal: "bg-teal/10 text-teal border-teal/20",
-    lavender: "bg-lavender/10 text-lavender border-lavender/20",
-    gold: "bg-gold/10 text-gold border-gold/20",
-    mint: "bg-mint/10 text-mint border-mint/20",
-    peach: "bg-peach/10 text-peach border-peach/20",
-    primary: "bg-primary/10 text-primary border-primary/20"
+    coral: "bg-muted/60 text-coral border-muted",
+    teal: "bg-muted/60 text-teal border-muted",
+    lavender: "bg-muted/60 text-lavender border-muted",
+    gold: "bg-muted/60 text-gold border-muted",
+    mint: "bg-muted/60 text-mint border-muted",
+    peach: "bg-muted/60 text-peach border-muted",
+    primary: "bg-muted/60 text-primary border-muted"
   };
 
   return (
