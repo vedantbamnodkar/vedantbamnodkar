@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -11,6 +13,7 @@ const Navbar = () => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
+    setMobileOpen(false);
     const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -31,11 +34,32 @@ const Navbar = () => {
         >
           V<span className="text-primary">B</span>
         </a>
-        <div className="flex gap-6 text-sm font-medium">
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-6 text-sm font-medium">
           <NavLink href="#about" onClick={(e) => handleNavClick(e, "about")}>About</NavLink>
           <NavLink href="#skills" onClick={(e) => handleNavClick(e, "skills")}>Skills</NavLink>
           <NavLink href="#projects" onClick={(e) => handleNavClick(e, "projects")}>Projects</NavLink>
-          <NavLink href="#contact" onClick={(e) => handleNavClick(e, "contact")}>Contact</NavLink>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ${
+        mobileOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+      }`}>
+        <div className="px-6 pb-4 flex flex-col gap-4 text-sm font-medium bg-background/80 backdrop-blur-xl">
+          <NavLink href="#about" onClick={(e) => handleNavClick(e, "about")}>About</NavLink>
+          <NavLink href="#skills" onClick={(e) => handleNavClick(e, "skills")}>Skills</NavLink>
+          <NavLink href="#projects" onClick={(e) => handleNavClick(e, "projects")}>Projects</NavLink>
         </div>
       </div>
     </nav>
