@@ -1,4 +1,4 @@
-import { ExternalLink, Github, BookOpen, Mic } from "lucide-react";
+import { ExternalLink, Github, BookOpen, Mic, Scale } from "lucide-react";
 import { AnimatedSection, StaggerContainer } from "@/hooks/useScrollAnimation";
 import { Badge } from "@/components/ui/badge";
 
@@ -55,6 +55,21 @@ const projects: Project[] = [
     ],
     color: "teal",
     icon: <Mic className="w-6 h-6" />,
+  },
+  {
+    title: "Kaayda Kay Sangto",
+    description:
+      "A legal awareness web application designed to make Indian law accessible and understandable for everyday citizens.",
+    technologies: ["React", "TypeScript", "Vite"],
+    links: [
+      {
+        label: "Live Demo",
+        url: "https://kaaydakaysangto.vercel.app/",
+        icon: "deploy",
+      },
+    ],
+    color: "lavender",
+    icon: <Scale className="w-6 h-6" />,
   },
 ];
 
